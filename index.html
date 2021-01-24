@@ -1,0 +1,42 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>NCAA Basketball Data</title>
+  </head>
+
+  <body>
+    <h1>NCAA Basketball Data</h1>
+    <!-- <a href="/download">DOWNLOAD CSV</a> -->
+    <form action="/download" method="POST">
+      <div>
+        <label for="startDate">Start Date</label>
+        <input
+          type="date"
+          id="startDate"
+          name="startDate"
+          value=""
+          min="2020-01-01"
+          max="2021-12-31"
+        />
+      </div>
+      <div>
+        <label for="endDate">End Date</label>
+        <input
+          type="date"
+          id="endDate"
+          name="endDate"
+          value=""
+          min="2020-01-01"
+          max="2021-12-31"
+        />
+      </div>
+      <div>
+        <button>Download Game Data</button>
+      </div>
+    </form>
+  </body>
+</html>
